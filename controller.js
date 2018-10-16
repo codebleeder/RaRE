@@ -6,7 +6,7 @@
                 var vm = this;
                 vm.title = "R.A.R.E";
                 vm.pages =
-                [{ name: 'home', id: 1},];
+                [{ name: 'home', id: 1},]; // add new pages here
                 vm.currentPageId = vm.pages[0].id;                
             }]);
 })();
