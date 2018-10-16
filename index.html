@@ -17,13 +17,28 @@
 <body>
 <!-- Page Content -->
 <div class="container" class="starter-template" ng-controller="IntroController as vm">
+    <div class="row">        
+        <div class="mx-auto"><h1>{{vm.title}}</h1></div>      
+    </div>
     <div class="row">
-        <div >
-            <h1>{{vm.title}}</h1>            
-        </div>
+        <div class="mx-auto">
+            <strong>R</strong>apid&nbsp;<strong>A</strong>ssistance&nbsp;of&nbsp;<strong>R</strong>are&nbsp;<strong>E</strong>mergencies
+        </div>        
     </div>
     
-    
+    <!--home page-->
+    <div ng-show="vm.currentPageId==1">
+        <div class="row">
+            <div class="mx-auto" style="min-width:150px">
+                <button type="button" class="btn btn-primary btn-block">New User</button>
+            </div>            
+        </div>
+        <div class="row mt-15">               
+            <div class="mx-auto " style="min-width:150px">
+                <button type="button" class="btn btn-primary btn-block">Returning User</button>
+            </div>                   
+        </div>
+    </div>
 </div>
 <!-- /.container -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
